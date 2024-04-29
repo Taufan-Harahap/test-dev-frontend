@@ -7,19 +7,19 @@ const shapes = {
 
 
 
-// Create an array to store the shape-color combinations
+
 const shapeArray = [];
 
 // Iterate through each shape and its colors
 for (const shape in shapes) {
   for (const color in shapes[shape]) {
     const count = shapes[shape][color];
-    // Add the shape-color combination to the array
+    
     shapeArray.push({ shape, color, count });
   }
 }
 
-// Print the resulting array
+
 console.log(shapeArray);
 
 
@@ -31,12 +31,7 @@ function filterShapesByColor(shapeArray, targetColor) {
 const redShapes = filterShapesByColor(shapeArray, 'red');
 console.log(redShapes);
 
-// function filterShapesByColor(shapesArray, targetColor) {
-//   return shapesArray.filter(shape => shape.color === targetColor);
-// }
 
-// const redShapes = filterShapesByColor(shapeArray, 'red');
-// console.log(redShapes); 
 
 
 function changeGreenToBlack(shapeArray) {
